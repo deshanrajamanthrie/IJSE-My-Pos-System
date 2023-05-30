@@ -5,7 +5,7 @@
     <title>My-Pos-System</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="assets/boostrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="./assets/style/normalize.css">
     <style>
         #Home-Page {
 
@@ -19,11 +19,24 @@
             height: 60px;
         }
 
+        body > main:nth-child(2) {
+            background-color: #DCE2F0;
+        }
 
         #customer-page {
             height: 100vh;
-            background-color:#DCE2F0 ;
+            /*background-color:#DCE2F0 ;*/
         }
+
+        /*  .title-customer{
+              height:50px;
+              display: flex;
+              border:  1px solid black;
+              width: ;
+
+          }*/
+
+
     </style>
 
 
@@ -78,24 +91,26 @@
         </div>
     </nav>
 </main>
-<main id="customer-page">
-    <section>    <!--border-->
-    <section class="row">
-        <div class="col mb-3">
-            <label for="formGroupExampleInput" class="form-label">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-        </div>
+<main class="container-fluid ">
 
+    <main id="customer-page"  class="container-md">
+        <section class="row">
+            <section>
+                <div class="col ">
+                    <label for="formGroupExampleInput" class="form-label">Example label</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                           placeholder="Example input placeholder">
+                </div>
+            </section>
 
-    </section>
-    </section>
+        </section>
 
-   <!-- <div class="mb-3">
-        <label for="formGroupExampleInput2" class="form-label">Another label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-    </div>-->
+        <!-- <div class="mb-3">
+             <label for="formGroupExampleInput2" class="form-label">Another label</label>
+             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+         </div>-->
 
-
+    </main>
 </main>
 
 
