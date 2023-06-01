@@ -93,35 +93,47 @@
 </main>
 <main class="container-fluid ">
 
-    <main id="customer-page"  class="container-md ">
-        <section class="row ">
-            <section class="col col-xxl-12 row mt-5 justify-content-center">
-                <aside class="col-5 ">
+    <main id="customer-page" class="container-md ">
+        <section class="row">
+            <section class="col row-cols-1 col-xxl-12 mt-5 justify-content-center">
+                <aside class="col-6 ">
                     <label for="CustomerId" class="col col-form-label ">Customer Id:</label>
-                    <div class="col-xxl-12">
-                        <input type="text" class="form-control w-100 bg-success bg-opacity-25 border border-danger" id="customerId" placeholder="Enter Customer Id">
+                    <div class="col">
+                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-danger"
+                               id="customerId" placeholder="Enter Customer Id">
                     </div>
-                   <!-- ///////////-->
+                    <!-- ///////////-->
                     <label for="customerName" class="col col-form-label ">Customer Name</label>
-                    <div class="col-xxl-12">
-                        <input type="text" class="form-control w-100 bg-success bg-opacity-25" id="customerName" placeholder="Enter Customer Name">
+                    <div class="col">
+                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                               id="customerName" placeholder="Enter Customer Name">
                     </div>
                     <!-- ///////////-->
                     <label for="customerAddress" class="col col-form-label ">Customer Address</label>
-                    <div class="col-xxl-12">
-                        <input type="text" class="form-control w-100 bg-success bg-opacity-25" id="customerAddress" placeholder="Enter Customer Address">
+                    <div class="col">
+                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                               id="customerAddress" placeholder="Enter Customer Address">
                     </div>
                     <!--///////////-->
                     <label for="customerSalary" class="col col-form-label ">Customer Sallery</label>
-                    <div class="col-xxl-12">
-                        <input type="text" class="form-control w-100 bg-success bg-opacity-25" id="customerSalary" placeholder="Enter Customer Salary">
+                    <div class="col">
+                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                               id="customerSalary" placeholder="Enter Customer Salary">
                     </div>
-
                 </aside>
+                <section class="col-4">
+                <div class="input-group mb-3 mt-4">
+                    <input type="text" class="form-control w-50" placeholder="Search Customer" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                </div>
+                </section>
+            </section>
+            <section class="col mt-3">
+                <button type="button" class="btn btn-outline-primary g-2">Save</button>
+                <button type="button" class="btn btn-outline-success g-2">Update</button>
+                <button type="button" class="btn btn-outline-danger g-2">Delete</button>
 
-
-
-        </section>
+            </section>
         </section>
 
         <!-- <div class="mb-3">
