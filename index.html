@@ -28,6 +28,9 @@
             /*background-color:#DCE2F0 ;*/
         }
 
+        #item-page{
+            height: 100vh;
+        }
         /*  .title-customer{
               height:50px;
               display: flex;
@@ -94,6 +97,105 @@
 <main class="container-fluid">
 
     <main id="customer-page" class="container-xxl ">
+        <section class="row">
+            <!--  <section class="col row-cols-1 col-xxl-12 mt-5 justify-content-center">-->
+            <aside class="col-xxl-12 justify-content-center ">
+                <div class="col-6">
+                    <label for="itemCode" class="col-form-label ">Item Code:</label>
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-danger"
+                           id="itemCode" placeholder="Enter Item Code">
+                </div>
+                <!-- ///////////-->
+
+                <div class="col-6">
+                    <label for="ItemName" class="col col-form-label ">Item Name</label>
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                           id="ItemName" placeholder="Enter Item Name">
+                </div>
+                <!-- ///////////-->
+
+                <div class="col-6">
+                    <label for="ItemPrice" class="col col-form-label ">Item Price</label>
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                           id="ItemPrice" placeholder="Enter Item Price">
+                </div>
+                <!--///////////-->
+
+                <div class="col-6">
+                    <label for="ItemQty" class="col col-form-label ">Item Qyt</label>
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                           id="ItemQty" placeholder="Enter Item Qty">
+                </div>
+            </aside>
+            <section class="col-4">
+                <div class="input-group mb-3 mt-4">
+                    <input type="text" class="form-control w-50" placeholder="Search Customer"
+                           aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon3">Search</button>
+                </div>
+                <!-- </section>-->
+            </section>
+            <section class="col mt-4 ms-5">
+                <button type="button" class="btn btn-outline-primary w-25">Save</button>
+                <button type="button" class="btn btn-outline-success w-25">Update</button>
+                <button type="button" class="btn btn-outline-danger w-25">Delete</button>
+
+            </section>
+
+        </section>
+        <section class="row">
+            <article class="col mt-5">
+                <table class="table  table-bordered border-success table-active table-striped table-hover bg-white ">
+                    <thead class="fw-bolder fst-normal bg-primary bg-opacity-25">
+                    <tr>
+                        <th scope="row">ID</th>
+                        <th scope="row">Name</th>
+                        <th scope="row">Address</th>
+                        <th scope="row">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider  bg-opacity-25">
+                    <tr>
+                        <td>C0001</td>
+                        <td>Saman</td>
+                        <td>Kalutara</td>
+                        <td>5000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0002</td>
+                        <td>Pasan</td>
+                        <td>Kalutara</td>
+                        <td>5000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0003</td>
+                        <td>Nimal</td>
+                        <td>Horana</td>
+                        <td>10000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0004</td>
+                        <td>Namal</td>
+                        <td>Colombo</td>
+                        <td>50000</td>
+
+                    </tr>
+                    </tbody>
+
+                </table>
+
+            </article>
+
+        </section>
+
+
+
+    </main>
+   <!-- ///////////////////////////////////////////-->
+    <main id="item-page" class="container-xxl ">
         <section class="row">
             <!--  <section class="col row-cols-1 col-xxl-12 mt-5 justify-content-center">-->
             <aside class="col-xxl-12 justify-content-center ">
@@ -194,6 +296,11 @@
          </div>-->
 
     </main>
+
+
+
+
+
 </main>
 
 
