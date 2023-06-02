@@ -91,49 +91,101 @@
         </div>
     </nav>
 </main>
-<main class="container-fluid ">
+<main class="container-fluid">
 
-    <main id="customer-page" class="container-md ">
+    <main id="customer-page" class="container-xxl ">
         <section class="row">
-            <section class="col row-cols-1 col-xxl-12 mt-5 justify-content-center">
-                <aside class="col-6 ">
-                    <label for="CustomerId" class="col col-form-label ">Customer Id:</label>
-                    <div class="col">
-                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-danger"
-                               id="customerId" placeholder="Enter Customer Id">
-                    </div>
-                    <!-- ///////////-->
+            <!--  <section class="col row-cols-1 col-xxl-12 mt-5 justify-content-center">-->
+            <aside class="col-xxl-12 justify-content-center ">
+                <div class="col-6">
+                    <label for="CustomerId" class="col-form-label ">Customer Id:</label>
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-danger"
+                           id="customerId" placeholder="Enter Customer Id">
+                </div>
+                <!-- ///////////-->
+
+                <div class="col-6">
                     <label for="customerName" class="col col-form-label ">Customer Name</label>
-                    <div class="col">
-                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
-                               id="customerName" placeholder="Enter Customer Name">
-                    </div>
-                    <!-- ///////////-->
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                           id="customerName" placeholder="Enter Customer Name">
+                </div>
+                <!-- ///////////-->
+
+                <div class="col-6">
                     <label for="customerAddress" class="col col-form-label ">Customer Address</label>
-                    <div class="col">
-                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
-                               id="customerAddress" placeholder="Enter Customer Address">
-                    </div>
-                    <!--///////////-->
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                           id="customerAddress" placeholder="Enter Customer Address">
+                </div>
+                <!--///////////-->
+
+                <div class="col-6">
                     <label for="customerSalary" class="col col-form-label ">Customer Sallery</label>
-                    <div class="col">
-                        <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
-                               id="customerSalary" placeholder="Enter Customer Salary">
-                    </div>
-                </aside>
-                <section class="col-4">
+                    <input type="text" class="form-control w-75 bg-success bg-opacity-25 border border-primary"
+                           id="customerSalary" placeholder="Enter Customer Salary">
+                </div>
+            </aside>
+            <section class="col-4">
                 <div class="input-group mb-3 mt-4">
-                    <input type="text" class="form-control w-50" placeholder="Search Customer" aria-describedby="button-addon2">
+                    <input type="text" class="form-control w-50" placeholder="Search Customer"
+                           aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
                 </div>
-                </section>
+                <!-- </section>-->
             </section>
-            <section class="col mt-3">
-                <button type="button" class="btn btn-outline-primary g-2">Save</button>
-                <button type="button" class="btn btn-outline-success g-2">Update</button>
-                <button type="button" class="btn btn-outline-danger g-2">Delete</button>
+            <section class="col mt-4 ms-5">
+                <button type="button" class="btn btn-outline-primary ">Save</button>
+                <button type="button" class="btn btn-outline-success ">Update</button>
+                <button type="button" class="btn btn-outline-danger ">Delete</button>
 
             </section>
+
+        </section>
+        <section class="row">
+            <article class="col mt-5">
+                <table class="table  table-bordered border-success table-active table-striped table-hover bg-white ">
+                    <thead class="fw-bolder fst-normal bg-primary bg-opacity-25">
+                    <tr>
+                        <th scope="row">ID</th>
+                        <th scope="row">Name</th>
+                        <th scope="row">Address</th>
+                        <th scope="row">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider  bg-opacity-25">
+                    <tr>
+                        <td>C0001</td>
+                        <td>Saman</td>
+                        <td>Kalutara</td>
+                        <td>5000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0002</td>
+                        <td>Pasan</td>
+                        <td>Kalutara</td>
+                        <td>5000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0003</td>
+                        <td>Nimal</td>
+                        <td>Horana</td>
+                        <td>10000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0004</td>
+                        <td>Namal</td>
+                        <td>Colombo</td>
+                        <td>50000</td>
+
+                    </tr>
+                    </tbody>
+
+                </table>
+
+            </article>
+
         </section>
 
         <!-- <div class="mb-3">
@@ -147,3 +199,49 @@
 
 </body>
 </html>
+
+
+<!-- <article class="col">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th scope="row">ID</th>
+                        <th scope="row">Name</th>
+                        <th scope="row">Address</th>
+                        <th scope="row">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>C0001</td>
+                        <td>Saman</td>
+                        <td>Kalutara</td>
+                        <td>5000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0002</td>
+                        <td>Pasan</td>
+                        <td>Kalutara</td>
+                        <td>5000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0003</td>
+                        <td>Nimal</td>
+                        <td>Horana</td>
+                        <td>10000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C0004</td>
+                        <td>Namal</td>
+                        <td>Colombo</td>
+                        <td>50000</td>
+
+                    </tr>
+                    </tbody>
+
+                </table>
+
+            </article>-->
