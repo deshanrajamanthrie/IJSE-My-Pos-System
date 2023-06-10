@@ -92,9 +92,10 @@
         </div>
     </nav>
 </main>
+
 <main class="container-fluid">
 
-    <main id="customer-page" class="container-xxl ">
+    <main id="Item-page" class="container-xxl ">
         <section class="row">
             <!--  <section class="col row-cols-1 col-xxl-12 mt-5 justify-content-center">-->
             <aside class="col-xxl-12 justify-content-center ">
@@ -191,8 +192,10 @@
 
 
     </main>
-    <!-- ///////////////////////////////////////////-->
-    <main id="item-page" class="container-xxl ms-5">
+   <!-- Item Page End-->
+
+  <!--  Customer Page Start-->
+    <main id="customer-page" class="container-xxl ms-5">
         <section class="row">
             <!--  <section class="col row-cols-1 col-xxl-12 mt-5 justify-content-center">-->
             <aside class="col-xxl-12 justify-content-center ">
@@ -284,6 +287,8 @@
         </section>
 
     </main>
+    <!--Customer PageEnd-->
+
     <!--  ////////Place Order Foam//////////-->
     <main id="placeOrderFoam">
         <section class="row justify-content-center align-content-between">
@@ -436,8 +441,43 @@
 
     </main>
 </main>
-
+<script src="./assets/boostrap/js/bootstrap.bundle.js"></script>
+<script>
+    function navigation (type,obj){
+        clearFields();
+    }
+</script>
 
 </body>
 </html>
+
+<!--
+    function navigation(type,obj) {
+        clearFields();
+        obj.style.color="blue";
+        switch (type) {
+            case "CUSTOMER":
+                document.getElementById("customer-page").style.display = "block";
+                break;
+            case "ITEM":
+                document.getElementById("item-page").style.display = "block";
+                break;
+            case "ORDER":
+                document.getElementById("order-page").style.display = "block";
+                break;
+            default:
+                clearFields();
+                break;
+        }
+
+    }
+
+    function clearFields() {
+            for (let i = 0; i <= 3; i++) {
+           document.getElementsByClassName('navSelect').item(i).style.color="black";
+            }
+        document.getElementById("customer-page").style.display = "none";
+        document.getElementById("item-page").style.display = "none";
+        document.getElementById("order-page").style.display = "none";
+    }-->
 
